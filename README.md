@@ -18,6 +18,6 @@
 
 ---
 
-*Version 0.1 - Codename Eva*
+*Version 0.1 - Eva*
 
 Copyright © 2014 - Emanuele Brivio - [emanuele@brivio.me](mailto:emanuele@brivio.me)
