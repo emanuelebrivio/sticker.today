@@ -1393,6 +1393,7 @@ request.put = function(url, data, fn){
  */
 
 module.exports = request;
+window.request = request;
 
 });
 
