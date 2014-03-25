@@ -1,6 +1,6 @@
-![newborn](http://i61.tinypic.com/63ygjr.png)
+![sticker today](https://raw.githubusercontent.com/emanuelebrivio/sticker.today/gh-pages/static/img/sticker-today.png)
 
-### Basic template for fast starting projects ###
+### Daily Stickers from Line Chat App ###
 
 ---
 
@@ -11,14 +11,10 @@
 **Core**
 - Nib
 - PureCSS.io
-- Google Font Open Sans
+- Google Font Open Sans and Leckerli One
 
 **More**
-- Smoothscroll.js [lightweight inline scroller]
-- Swipe.js [touch optimized slider]
-
-**Compiler**
-- Live Compiler and Server [github.com/azappa](https://github.com/azappa/)
+- qwest [pyrsmk](https://github.com/pyrsmk/qwest)
 
 ---
 

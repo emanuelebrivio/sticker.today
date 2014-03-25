@@ -14,8 +14,7 @@
     });
   };
 
-  //qwest.get('http://www.kimonolabs.com/api/6mcj643s?apikey=9e9e30f3542ec789be4de05d5c9f16e9')
-  qwest.get('/static/js/example.json')
+  qwest.get('http://www.kimonolabs.com/api/6mcj643s?apikey=9e9e30f3542ec789be4de05d5c9f16e9')
     .success(function(response){
       // Runned when the request is successful
       console.log(response);
