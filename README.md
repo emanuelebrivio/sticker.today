@@ -14,8 +14,10 @@
 - Google Font Open Sans and Leckerli One
 
 **More**
-- qwest [pyrsmk](https://github.com/pyrsmk/qwest)
+- Reqwest [ded](https://github.com/ded/Reqwest)
 
 ---
+
+*Version 0.1 - Codename Eva*
 
 Copyright © 2014 - Emanuele Brivio - [emanuele@brivio.me](mailto:emanuele@brivio.me)
