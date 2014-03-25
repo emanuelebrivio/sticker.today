@@ -14,7 +14,7 @@
 - Google Font Open Sans and Leckerli One
 
 **More**
-- Reqwest [ded](https://github.com/ded/Reqwest)
+- Reqwest by [ded](https://github.com/ded/Reqwest)
 
 ---
 
