@@ -1,0 +1,73 @@
+@import ('nib')
+@import url('//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700')
+
+
+/* @CUSTOM colors for easy use */
+_accent = #2ECC71
+/* end @CUSTOM */
+
+.open-sans
+  font-family 'Open Sans', sans-serif
+
+.pure-g [class *='pure-u'],
+.pure-g-r [class*="pure-u"]
+  @extends .open-sans
+
+html,
+body
+  width 100%
+  height 100%
+  @extends .open-sans
+
+.pure-form
+  input[type='text'], input[type='password'], input[type='email'], input[type='url'], input[type='date'], input[type='month'], input[type='time'], input[type='datetime'], input[type='datetime-local'], input[type='week'], input[type='number'], input[type='search'], input[type='tel'], input[type='color'], select, textarea
+    @extends .open-sans
+  button
+    @extends .open-sans
+
+/* @CUSTOM CSS for fast start */
+.container
+  width 960px
+  margin auto
+
+.page
+  width 100%
+  height auto
+
+h1, h2, h3
+  font-weight 400
+h4, h5, h6
+  font-weight 600
+
+.spacer-5
+  height 5px
+.spacer-10
+  height 10px
+.spacer-20
+  height 20px
+.spacer-40
+  height 40px
+.spacer-60
+  height 60px
+.spacer-80
+  height 80px
+.spacer-100
+  height 100px
+
+.text-left
+  text-align left
+.text-center
+  text-align center
+.text-right
+  text-align right
+
+a.link
+  text-decoration none
+  color #333
+  box-shadow inset 0 -2px 0 rgba(#333, 0.2)
+  transition color 0.3s ease, box-shadow 0.3s ease
+  display inline-block
+  &:hover
+    color _accent
+    box-shadow inset 0 -2px 0 rgba(_accent, 0.3)
+/* end @CUSTOM */

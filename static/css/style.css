@@ -1,0 +1,19 @@
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+.open-sans,.pure-g [class *='pure-u'],.pure-g-r [class*="pure-u"],html,body,.pure-form input[type='text'],.pure-form input[type='password'],.pure-form input[type='email'],.pure-form input[type='url'],.pure-form input[type='date'],.pure-form input[type='month'],.pure-form input[type='time'],.pure-form input[type='datetime'],.pure-form input[type='datetime-local'],.pure-form input[type='week'],.pure-form input[type='number'],.pure-form input[type='search'],.pure-form input[type='tel'],.pure-form input[type='color'],.pure-form select,.pure-form textarea,.pure-form button{font-family:'Open Sans',sans-serif}
+html,body{width:100%;height:100%;}
+.container{width:960px;margin:auto}
+.page{width:100%;height:auto}
+h1,h2,h3{font-weight:400}
+h4,h5,h6{font-weight:600}
+.spacer-5{height:5px}
+.spacer-10{height:10px}
+.spacer-20{height:20px}
+.spacer-40{height:40px}
+.spacer-60{height:60px}
+.spacer-80{height:80px}
+.spacer-100{height:100px}
+.text-left{text-align:left}
+.text-center{text-align:center}
+.text-right{text-align:right}
+a.link{text-decoration:none;color:#333;-webkit-box-shadow:inset 0 -2px 0 rgba(51,51,51,0.2);box-shadow:inset 0 -2px 0 rgba(51,51,51,0.2);-webkit-transition:color 0.3s ease, box-shadow 0.3s ease;-moz-transition:color 0.3s ease, box-shadow 0.3s ease;-o-transition:color 0.3s ease, box-shadow 0.3s ease;-ms-transition:color 0.3s ease, box-shadow 0.3s ease;transition:color 0.3s ease, box-shadow 0.3s ease;display:inline-block;}
+a.link:hover{color:#2ecc71;-webkit-box-shadow:inset 0 -2px 0 rgba(46,204,113,0.3);box-shadow:inset 0 -2px 0 rgba(46,204,113,0.3)}
