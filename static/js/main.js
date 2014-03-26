@@ -52,8 +52,8 @@
         item.setAttribute('data-image-preview', el.thumb.href);
 
         item.addEventListener('click', function () {
-          // showModal(this);
-          window.location.href = this.getAttribute('data-image-preview');
+          showModal(this);
+          //window.location.href = this.getAttribute('data-image-preview');
         });
 
         container.appendChild(item);
