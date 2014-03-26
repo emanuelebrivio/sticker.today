@@ -67,8 +67,9 @@
   var showModal = function (obj) {
     var preview = document.createElement('img');
 
-    //preview.setAttribute('src', obj.getAttribute('data-image-preview'));
-
+    setTimeout(function () {
+      preview.setAttribute('src', obj.getAttribute('data-image-preview'));
+    }, 510);
     
     modal.querySelector('.preview').appendChild(preview);
     modal.querySelector('.pure-button').setAttribute('href', obj.getAttribute('data-sticker-preview'))
