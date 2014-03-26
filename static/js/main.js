@@ -27,7 +27,9 @@
       console.log(response);
 
       var container = document.querySelector('#results')
-        , modal = document.querySelector('#modal');
+        , modal = document.querySelector('#modal')
+        , mask = document.querySelector('#mask')
+        ;
       
       response.results.collection1.forEach(function (el) {
         var item = document.createElement('li')
@@ -69,7 +71,12 @@
 
     modal.innerHTML = '';
     modal.appendChild(preview);
-    modal.style.left = 0;
+    modal.style.display = 'block';
+    mask.style.display = 'block';
+    setTimeout(function () {
+      modal.classList.add('open');
+      mask.classList.add('open');
+    }, 10);
   };
 
 })();
