@@ -30,19 +30,24 @@
       
       response.results.collection1.forEach(function (el) {
         var item = document.createElement('li')
+          , thumbDiv = document.createElement('div')
           , thumb = document.createElement('img')
+          , textDiv = document.createElement('div')
           , name = document.createElement('h4')
           , price = document.createElement('span')
           ;
         
         name.textContent = el.name.text;
         price.textContent = el.price;
-        thumb.setAttribute('src', el.thumb.src);
-        thumb.classList.add('thumbnail');
+        textDiv.appendChild(name);
+        textDiv.appendChild(price);
 
-        item.appendChild(thumb);
-        item.appendChild(name);
-        item.appendChild(price);
+        thumb.setAttribute('src', el.thumb.src);
+        thumbDiv.classList.add('thumbnail');
+        thumbDiv.appendChild(thumb);
+
+        item.appendChild(thumbDiv);
+        item.appendChild(textDiv);
 
         container.appendChild(item);
       });
