@@ -38,7 +38,7 @@
           ;
         
         name.textContent = el.name.text;
-        price.textContent = el.price;
+        price.innerHTML = el.price.replace('Free', '<small>FREE</small>');
         textDiv.appendChild(name);
         textDiv.appendChild(price);
 
