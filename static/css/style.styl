@@ -200,18 +200,32 @@ header
   &.open
     left 0
 
-  #close-modal
-    float right
-    display block
-    width 24px
-    height 24px
-    padding 10px
-    cursor pointer
-    img
-      width 24px
-      height 24px
+  .modal-header
+    background #FFF
+    border-bottom 1px solid #DDD
+    padding 20px
+    position fixed
+    top 0
+    left 0
+    width 100%
+
+    #close-modal
+      display inline-block
+      vertical-align middle
+      width 16px
+      height 16px
+      padding 10px
+      cursor pointer
+      img
+        width 16px
+        height 16px
+
+    .pure-button
+      display inline-block
+      vertical-align middle
 
   .preview
+    padding-top 60px
     img
       display block
       max-width 90%

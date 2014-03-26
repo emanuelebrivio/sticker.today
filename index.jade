@@ -16,10 +16,14 @@ block app
 
     #mask
     #modal
-      a#close-modal
-        img(src='static/img/modal-close.png')
-      button.pure-button
-        span Open in LINE
+      .modal-header
+        .pure-g
+          .pure-u-1-2
+            a#close-modal
+              img(src='static/img/modal-close.png')
+          .pure-u-1-2
+            button.pure-button
+              span Open in LINE
       .preview
 
 //-block scripts
