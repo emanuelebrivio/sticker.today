@@ -48,6 +48,11 @@
 
         item.appendChild(thumbDiv);
         item.appendChild(textDiv);
+        item.setAttribute('data-href', el.thumb.href);
+
+        item.addEventListener('click', function () {
+          window.location.href = this.getAttribute('data-href');
+        });
 
         container.appendChild(item);
       });
