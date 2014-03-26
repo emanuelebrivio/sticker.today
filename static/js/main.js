@@ -71,7 +71,7 @@
 
     
     modal.querySelector('.preview').appendChild(preview);
-    modal.querySelector('.pure-button').setAttribute('data-sticker-preview', obj.getAttribute('data-sticker-preview'))
+    modal.querySelector('.pure-button').setAttribute('href', obj.getAttribute('data-sticker-preview'))
 
     // Show modal and mask
     modal.style.display = 'block';
@@ -93,11 +93,6 @@
       // Remove images from preview
       modal.querySelector('.preview').innerHTML = '';
     }, 500);
-  });
-
-  document.querySelector('#show-in-line').addEventListener('click', function () {
-    var to = this.getAttribute('data-sticker-preview');
-    window.location.href = to;
   });
 
 })();
