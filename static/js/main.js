@@ -69,7 +69,7 @@
 
     preview.setAttribute('src', obj.getAttribute('data-image-preview'));
 
-    modal.querySelector('.preview').innerHTML = '';
+    
     modal.querySelector('.preview').appendChild(preview);
 
     // Show modal and mask
@@ -82,11 +82,16 @@
   };
 
   document.querySelector('#close-modal').addEventListener('click', function () {
+
+    // Hide modal and mask
     modal.classList.remove('open');
     mask.classList.remove('open');
     setTimeout(function () {
       modal.style.display = 'none';
       mask.style.display = 'none';
+
+      // Remove images from preview
+      modal.querySelector('.preview').innerHTML = '';
     }, 500);
   });
 

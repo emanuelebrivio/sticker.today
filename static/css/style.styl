@@ -31,6 +31,18 @@ body
   button
     @extends .open-sans
 
+.pure-button
+  @extends .open-sans
+  background _accent
+  color #FFF
+  transition background 0.5s ease
+  span
+    text-transform uppercase
+    font-weight 700
+    font-size 12px
+  &:hover
+    background lighten(_accent, 20%)
+
 /* @CUSTOM CSS for fast start */
 .container
   width 960px
