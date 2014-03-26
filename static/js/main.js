@@ -67,7 +67,7 @@
   var showModal = function (obj) {
     var preview = document.createElement('img');
 
-    preview.setAttribute('src', obj.getAttribute('data-image-preview'));
+    //preview.setAttribute('src', obj.getAttribute('data-image-preview'));
 
     
     modal.querySelector('.preview').appendChild(preview);
