@@ -38,11 +38,11 @@
         name.textContent = el.name.text;
         price.textContent = el.price;
         thumb.setAttribute('src', el.thumb.src);
+        thumb.classList.add('thumbnail');
 
         item.appendChild(thumb);
         item.appendChild(name);
         item.appendChild(price);
-        item.classList.add('text-center');
 
         container.appendChild(item);
       });
