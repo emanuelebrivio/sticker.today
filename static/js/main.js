@@ -52,10 +52,10 @@
         item.appendChild(thumbDiv);
         item.appendChild(textDiv);
         item.setAttribute('data-image-preview', el.thumb.href);
+        item.setAttribute('data-sticker-preview', el.name.href);
 
         item.addEventListener('click', function () {
           showModal(this);
-          //window.location.href = this.getAttribute('data-image-preview');
         });
 
         container.appendChild(item);
@@ -71,6 +71,7 @@
 
     
     modal.querySelector('.preview').appendChild(preview);
+    modal.querySelector('.pure-button').setAttribute('data-sticker-preview', obj.getAttribute('data-sticker-preview'))
 
     // Show modal and mask
     modal.style.display = 'block';
@@ -82,7 +83,6 @@
   };
 
   document.querySelector('#close-modal').addEventListener('click', function () {
-
     // Hide modal and mask
     modal.classList.remove('open');
     mask.classList.remove('open');
@@ -93,6 +93,11 @@
       // Remove images from preview
       modal.querySelector('.preview').innerHTML = '';
     }, 500);
+  });
+
+  document.querySelector('#show-in-line').addEventListener('click', function () {
+    var to = this.getAttribute('data-sticker-preview');
+    window.location.href = to;
   });
 
 })();
