@@ -26,7 +26,8 @@
 
       console.log(response);
 
-      var container = document.querySelector('#results');
+      var container = document.querySelector('#results')
+        , modal = document.querySelector('#modal');
       
       response.results.collection1.forEach(function (el) {
         var item = document.createElement('li')
@@ -48,10 +49,11 @@
 
         item.appendChild(thumbDiv);
         item.appendChild(textDiv);
-        item.setAttribute('data-href', el.thumb.href);
+        item.setAttribute('data-image-preview', el.thumb.href);
 
         item.addEventListener('click', function () {
-          window.location.href = this.getAttribute('data-href');
+          // showModal(this);
+          window.location.href = this.getAttribute('data-image-preview');
         });
 
         container.appendChild(item);
@@ -59,5 +61,15 @@
 
     }
   });
+
+  var showModal = function (obj) {
+    var preview = document.createElement('img');
+
+    preview.setAttribute('src', obj.getAttribute('data-image-preview'));
+
+    modal.innerHTML = '';
+    modal.appendChild(preview);
+    modal.style.left = 0;
+  };
 
 })();
