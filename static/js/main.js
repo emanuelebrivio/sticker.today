@@ -52,7 +52,7 @@
         item.appendChild(thumbDiv);
         item.appendChild(textDiv);
         item.setAttribute('data-image-preview', el.thumb.href);
-        item.setAttribute('data-sticker-preview', el.name.href);
+        item.setAttribute('data-sticker-preview', el.name.href.substr(el.name.href.indexOf('line://')););
 
         item.addEventListener('click', function () {
           showModal(this);
