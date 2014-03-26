@@ -69,8 +69,10 @@
 
     preview.setAttribute('src', obj.getAttribute('data-image-preview'));
 
-    modal.innerHTML = '';
-    modal.appendChild(preview);
+    modal.querySelector('.preview').innerHTML = '';
+    modal.querySelector('.preview').appendChild(preview);
+
+    // Show modal and mask
     modal.style.display = 'block';
     mask.style.display = 'block';
     setTimeout(function () {
@@ -78,5 +80,14 @@
       mask.classList.add('open');
     }, 10);
   };
+
+  document.querySelector('#close-modal').addEventListener('click', function () {
+    modal.classList.remove('open');
+    mask.classList.remove('open');
+    setTimeout(function () {
+      modal.style.display = 'none';
+      mask.style.display = 'none';
+    }, 500);
+  });
 
 })();
