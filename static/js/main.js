@@ -24,21 +24,25 @@
   , error: function (error) { }
   , success: function (response) {
 
+      console.log(response);
+
       var container = document.querySelector('#results');
       
       response.results.collection1.forEach(function (el) {
-        var item = document.createElement('div')
+        var item = document.createElement('li')
           , thumb = document.createElement('img')
           , name = document.createElement('h4')
+          , price = document.createElement('span')
           ;
         
         name.textContent = el.name.text;
+        price.textContent = el.
         thumb.setAttribute('src', el.thumb.src);
 
         item.appendChild(thumb);
         item.appendChild(name);
+        item.appendChild(price);
         item.classList.add('text-center');
-        item.classList.add('pure-u-1-4');
 
         container.appendChild(item);
       });
