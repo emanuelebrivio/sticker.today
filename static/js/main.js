@@ -36,7 +36,7 @@
           ;
         
         name.textContent = el.name.text;
-        price.textContent = el.
+        price.textContent = el.price;
         thumb.setAttribute('src', el.thumb.src);
 
         item.appendChild(thumb);
