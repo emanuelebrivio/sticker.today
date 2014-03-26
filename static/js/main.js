@@ -92,7 +92,7 @@
 
       // Remove images from preview
       modal.querySelector('.preview').innerHTML = '';
-    }, 500);
+    }, 300);
   });
 
 })();
